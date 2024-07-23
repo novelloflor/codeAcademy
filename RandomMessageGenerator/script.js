@@ -2,11 +2,11 @@
 const phraseBuilder = (verb, adj) => {
     let obj = {
         primePhrase: 'This week is going to feel ',
-        secondaryPhrase: 'And next week you are going to be doing lots of ',
+        secondaryPhrase: 'For next week I see that you are going to be doing lots of ',
         verb: verb,
         adj: adj,
         generate(){
-            var phrase = `${obj.primePhrase}${adj}!. ${obj.secondaryPhrase}${verb}`
+            var phrase = `${obj.primePhrase}${adj}! ${obj.secondaryPhrase}${verb}`
             return phrase;
         }
     }
